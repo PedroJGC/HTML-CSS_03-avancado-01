@@ -9,15 +9,15 @@
 
 <body>
     <form>
-        <input 
-        min="0"
-        max="200"
-        value="0"
-        oninput="valor.innerText = this.value"
-        type="range"
-        name="total">
-
-        <span id="valor">0</span>
+        <datalist id="colorpicker">
+            <option value="#FCAC00">
+            <option value="#ACFC00">
+        </datalist>
+        <input type="color" 
+            name="color"
+            value="#0FACAA"
+            list="colorpicker"
+            >
 
         <button>Submit</button>
     </form>
