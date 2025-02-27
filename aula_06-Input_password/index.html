@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+</head>
+
+<body>
+    <form>
+        <!--
+            name="senha" não é correto
+            Na verdade o password deve ser enviado 
+            para o backend através do metodo POST
+        -->
+        <input type="password"
+            minlength="8"
+            maxlength="12"
+            name="senha"
+            pattern="[#0-9a-fA-F]{4,8}"
+            title="Apenas Hexadecimal"
+            >
+
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
